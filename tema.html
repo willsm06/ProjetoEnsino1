@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mudar o tema</title>
+    <style>
+      body {
+        /* Página */
+        margin: 0;
+        padding: 0;
+        background-color: green;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+
+        /* Texto*/
+        color: #000;
+        font-size: 30px;
+        font-weight: bolder;
+        text-align: center;
+      }
+
+      button {
+        background-color: #fff;
+        height: 50px;
+        width: 200px;
+        font-size: 20px;
+        font-weight: bolder;
+        border: none;
+      }
+
+      h1{
+        margin: 0;
+      }
+
+      .tema_escuro {
+        background-color: #000;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Troca de Tema</h1>
+    <p>
+      (Alterar conteúdo aqui e mudar cores.)<br><br>
+      Clique no botão e mude o tema da página!
+    </p>
+    <button onclick="mudarTema()">Mudar</button>
+  </body>
+  <script>
+        function mudarTema() {
+            document.body.classList.toggle('tema_escuro');
+        }
+  </script>
+</html>
